@@ -1,0 +1,72 @@
+body, .intro, .ingredientsImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title */
+
+h1 {
+    font-weight: 400;
+}
+
+.title {
+    background-image: url("../images/apple-pie.jpg");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 28px;
+}
+
+/* Main */
+main {
+    width: 70%;
+}
+
+p, li {
+    font-size: 18px;
+}
+
+.intro > .img {
+    height: 60px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.intro, .ingredients {
+    border-bottom: 1px solid black;
+}
+
+.ingredients > .ingredientsImg >.img {
+    height: 80px;
+    padding: 10px;
+}
+
+.ingredients, .directions {
+    margin-top: 40px;
+}
+
+ul > li {
+    list-style-type: '- ';
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: elementcounter;
+  }
+  
+ol > li:before {
+    content: counter(elementcounter) ") ";
+    counter-increment: elementcounter;
+}
